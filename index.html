@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tami Adeniji | Developer Portfolio</title>
+  <meta name="description" content="Portfolio of Adeniji Adedola Oluwatamilore (Tami), final-year Computer Science student at Pan-Atlantic University.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=IBM+Plex+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ============ HEADER / NAV ============ -->
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a href="index.html" class="logo" aria-label="Home">tami<span>.</span>dev</a>
+
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav">Menu</button>
+
+      <nav id="mainNav" class="main-nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#contact" class="nav-cta">Get in touch</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero wrap" id="top">
+      <p class="label"><span class="led"></span> Available for internships &amp; junior roles</p>
+      <h1>Hi, I'm <em>Tami.</em><br>I build software and keep networks honest.</h1>
+      <p class="hero-lead">
+        Final-year Computer Science student at Pan-Atlantic University. I write Java applications,
+        design databases, and configure Cisco networks, and I'm currently building a tool that audits router security.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-solid" href="#contact">Hire me</a>
+        <a class="btn" href="#projects">See my work</a>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section wrap" id="about">
+      <h2><span class="num">01</span> About me</h2>
+
+      <div class="about-grid">
+        <article class="card">
+          <h3>Who I am</h3>
+          <!-- EDIT: change this paragraph to your own words -->
+          <p>
+            I'm Adeniji Adedola Oluwatamilore, but everyone calls me Tami. I'm a final-year
+            Computer Science student at Pan-Atlantic University with strong results in
+            networking, security, systems and data-related courses.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>What I do</h3>
+          <!-- EDIT -->
+          <p>
+            I build desktop applications in Java and JavaFX backed by PostgreSQL, design and
+            configure multi-router networks in Cisco Packet Tracer, and use Git and GitHub
+            to work with teams.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>What I'm focused on</h3>
+          <!-- EDIT -->
+          <p>
+            Network security. My final year project parses Cisco router and switch configs and
+            flags risky ACL rules. I also enjoy formal specification (Z and VDM-SL) because
+            it forces you to think clearly before you code.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section wrap" id="skills">
+      <h2><span class="num">02</span> Skills</h2>
+      <p class="section-note">Each tag is one port on the patch panel. Add yours by copying a line.</p>
+
+      <ul class="ports">
+        <!-- EDIT: copy one <li> to add a skill, delete one to remove it -->
+        <li>Java</li>
+        <li>JavaFX</li>
+        <li>Maven</li>
+        <li>PostgreSQL</li>
+        <li>Python</li>
+        <li>HTML &amp; CSS</li>
+        <li>JavaScript</li>
+        <li>Git &amp; GitHub</li>
+        <li>Cisco Packet Tracer</li>
+        <li>OSPF / EIGRP</li>
+        <li>ACLs &amp; network security</li>
+        <li>BCrypt authentication</li>
+        <li>Z &amp; VDM-SL</li>
+      </ul>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section wrap" id="projects">
+      <h2><span class="num">03</span> Projects</h2>
+
+      <div class="project-grid">
+
+        <!-- PROJECT 1 (has its own details page) -->
+        <article class="project">
+          <img src="assets/cafeteria-cover.svg" alt="Screenshot of the Cafeteria Management System" width="800" height="500" loading="lazy">
+          <div class="project-body">
+            <p class="label">Project 01</p>
+            <h3>Cafeteria Management System</h3>
+            <p>
+              A JavaFX and PostgreSQL desktop app for Sancta Maria Catholic College of Nursing
+              Sciences, with separate Customer and Manager roles.
+            </p>
+            <ul class="chips">
+              <li>Java</li><li>JavaFX</li><li>PostgreSQL</li><li>BCrypt</li>
+            </ul>
+            <div class="project-links">
+              <a class="btn btn-solid" href="project-cafeteria.html">Read case study</a>
+              <!-- EDIT: put your real GitHub link -->
+              <a class="btn" href="https://github.com/YOUR-USERNAME/cafeteria-management" target="_blank" rel="noopener">Source code</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 2 -->
+        <article class="project">
+          <img src="assets/lims-cover.svg" alt="Screenshot of Santé Diagnostics" width="800" height="500" loading="lazy">
+          <div class="project-body">
+            <p class="label">Project 02</p>
+            <h3>Santé Diagnostics (LIMS)</h3>
+            <p>
+              A Laboratory Information Management System built as a team. I set up the project
+              architecture, models, DAOs, services, login flow and the GitHub workflow.
+            </p>
+            <ul class="chips">
+              <li>Java</li><li>JavaFX</li><li>Maven</li><li>PostgreSQL</li><li>Git</li>
+            </ul>
+            <div class="project-links">
+              <!-- EDIT -->
+              <a class="btn" href="https://github.com/YOUR-USERNAME/sante-diagnostics" target="_blank" rel="noopener">Source code</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 3 -->
+        <article class="project">
+          <img src="assets/network-cover.svg" alt="Screenshot of the campus network in Packet Tracer" width="800" height="500" loading="lazy">
+          <div class="project-body">
+            <p class="label">Project 03</p>
+            <h3>University Campus Network</h3>
+            <p>
+              A Packet Tracer network joining seven university departments across two
+              networks, using OSPF Area 0 and EIGRP AS 100 with DHCP, ACLs and Telnet access.
+            </p>
+            <ul class="chips">
+              <li>Cisco Packet Tracer</li><li>OSPF</li><li>EIGRP</li><li>DHCP</li><li>ACLs</li>
+            </ul>
+            <div class="project-links">
+              <!-- EDIT: link to a PDF, GitHub repo or Drive folder with the .pkt file, or delete this line -->
+              <a class="btn" href="https://github.com/YOUR-USERNAME/campus-network" target="_blank" rel="noopener">View files</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 4 -->
+        <article class="project">
+          <img src="assets/acl-cover.svg" alt="Preview of the ACL audit tool" width="800" height="500" loading="lazy">
+          <div class="project-body">
+            <p class="label">Project 04 · In progress</p>
+            <h3>ACL Audit Tool (Final Year Project)</h3>
+            <p>
+              Reads Cisco router and switch config files and flags risky ACL rules, based on
+              NIST SP 800-41 and other published best practice.
+            </p>
+            <ul class="chips">
+              <li>Python</li><li>Cisco IOS configs</li><li>Network security</li>
+            </ul>
+            <div class="project-links">
+              <!-- EDIT -->
+              <a class="btn" href="https://github.com/YOUR-USERNAME/acl-audit-tool" target="_blank" rel="noopener">Source code</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ============ ACHIEVEMENTS ============ -->
+    <section class="section wrap" id="achievements">
+      <h2><span class="num">04</span> Achievements</h2>
+      <p class="section-note">Add a new one by copying a whole &lt;li&gt; block below. Newest first.</p>
+
+      <ol class="timeline">
+        <!-- EDIT: copy this whole <li> block to add an achievement -->
+        <li>
+          <span class="when">Jun – Aug 2026</span>
+          <div>
+            <h3>Industrial training at HiiT Plc</h3>
+            <p>Completed a remote SIWES internship covering five courses and wrote the internship report.</p>
+          </div>
+        </li>
+
+        <li>
+          <span class="when">2026</span>
+          <div>
+            <h3>Defended the campus network project (ICT 305)</h3>
+            <p>Presented and defended a two-network Packet Tracer design in class.</p>
+          </div>
+        </li>
+
+        <li>
+          <span class="when">2026</span>
+          <div>
+            <h3>Led architecture on the Santé Diagnostics team</h3>
+            <p>Built the foundation others coded on and merged teammates' work for the final submission.</p>
+          </div>
+        </li>
+
+        <li>
+          <span class="when">YEAR</span>
+          <div>
+            <h3>Your next achievement here</h3>
+            <p>Award, certificate, hackathon, leadership role: copy this block and replace the text.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ============ CALL TO ACTION ============ -->
+    <section class="cta" id="contact">
+      <div class="wrap">
+        <h2>Let's work together.</h2>
+        <p>
+          Looking for a developer who is comfortable with both code and networks?
+          Send me a message and I'll reply quickly.
+        </p>
+        <div class="hero-actions">
+          <!-- EDIT: replace with your real email -->
+          <a class="btn btn-signal" href="mailto:your.email@example.com?subject=Hello%20Tami">Email me</a>
+          <!-- EDIT: replace 234XXXXXXXXXX with your number: country code, no + and no leading 0 (e.g. 2348012345678) -->
+          <a class="btn btn-light" href="https://wa.me/234XXXXXXXXXX?text=Hi%20Tami%2C%20I%20saw%20your%20portfolio" target="_blank" rel="noopener">WhatsApp</a>
+          <!-- EDIT: your LinkedIn and GitHub -->
+          <a class="btn btn-light" href="https://github.com/YOUR-USERNAME" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn btn-light" href="https://www.linkedin.com/in/YOUR-USERNAME" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>© <span id="year">2026</span> Adeniji Adedola Oluwatamilore</p>
+      <p>CSC 419 · Pan-Atlantic University</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

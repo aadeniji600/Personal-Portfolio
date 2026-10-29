@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cafeteria Management System | Tami Adeniji</title>
+  <meta name="description" content="Case study: a JavaFX and PostgreSQL cafeteria management system for Sancta Maria Catholic College of Nursing Sciences.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=IBM+Plex+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a href="index.html" class="logo" aria-label="Home">tami<span>.</span>dev</a>
+
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav">Menu</button>
+
+      <nav id="mainNav" class="main-nav" aria-label="Main navigation">
+        <a href="index.html#about">About</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#achievements">Achievements</a>
+        <a href="index.html#contact" class="nav-cta">Get in touch</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+
+    <!-- ============ TITLE ============ -->
+    <section class="detail-hero">
+      <a class="back-link" href="index.html#projects">&larr; Back to all projects</a>
+      <p class="label">Case study</p>
+      <h1>Cafeteria Management System</h1>
+      <!-- EDIT: one-line summary -->
+      <p class="hero-lead">
+        A desktop app that replaces paper orders and guesswork in a college cafeteria with
+        a proper database, logins and a manager dashboard.
+      </p>
+
+      <dl class="detail-meta">
+        <div><dt>Client</dt><dd>Sancta Maria Catholic College of Nursing Sciences</dd></div>
+        <div><dt>Role</dt><dd>Developer (solo)</dd></div>
+        <div><dt>Type</dt><dd>JavaFX desktop app</dd></div>
+      </dl>
+
+      <div class="hero-actions">
+        <!-- EDIT: your real GitHub repo -->
+        <a class="btn btn-solid" href="https://github.com/YOUR-USERNAME/cafeteria-management" target="_blank" rel="noopener">View source code</a>
+        <a class="btn" href="index.html#contact">Get in touch</a>
+      </div>
+    </section>
+
+    <div class="detail-body">
+
+      <!-- ============ FULL DESCRIPTION ============ -->
+      <section class="detail-block">
+        <h2>Overview</h2>
+        <!-- EDIT -->
+        <p>
+          The Cafeteria Management System is a JavaFX desktop application backed by a
+          PostgreSQL database. It has two kinds of users: customers, who browse the menu
+          and place orders, and managers, who maintain the menu and keep track of what
+          is being ordered.
+        </p>
+        <p>
+          I also wrote a formal VDM-SL specification of the system for a separate
+          written submission, so the design was reasoned about before and after it was coded.
+        </p>
+      </section>
+
+      <!-- ============ PROBLEM ============ -->
+      <section class="detail-block">
+        <h2>The problem</h2>
+        <!-- EDIT: describe the real problem in your own words -->
+        <p>
+          Cafeteria orders were handled by hand. That makes it easy to lose an order,
+          hard for a manager to see what sells, and impossible to restrict who can change
+          the menu. The college needed one place to take orders and manage the menu
+          with the right people having the right access.
+        </p>
+      </section>
+
+      <!-- ============ FEATURES ============ -->
+      <section class="detail-block">
+        <h2>Features</h2>
+        <ul class="feature-list">
+          <!-- EDIT: copy an <li> to add a feature -->
+          <li><strong>Two roles:</strong> Customer and Manager, each with their own screens.</li>
+          <li><strong>Secure login:</strong> passwords are hashed with BCrypt, never stored as plain text.</li>
+          <li><strong>Reliable orders:</strong> database transactions so an order is saved completely or not at all.</li>
+          <li><strong>Responsive UI:</strong> slow database work runs on background threads so the window never freezes.</li>
+          <li><strong>Clean structure:</strong> Singleton pattern for the database connection.</li>
+        </ul>
+      </section>
+
+      <!-- ============ SCREENSHOTS ============ -->
+      <section class="detail-block shots">
+        <h2 style="grid-column: 1 / -1; margin-bottom: 0;">Screenshots</h2>
+        <!-- EDIT: replace the files in the assets folder with real screenshots, keeping the same file names (or change the src) -->
+        <figure>
+          <img src="assets/cafeteria-shot-1.svg" alt="Customer menu screen" width="800" height="500" loading="lazy">
+          <figcaption>Customer: browsing the menu</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/cafeteria-shot-2.svg" alt="Manager dashboard screen" width="800" height="500" loading="lazy">
+          <figcaption>Manager: dashboard</figcaption>
+        </figure>
+      </section>
+
+      <!-- ============ TECHNOLOGIES ============ -->
+      <section class="detail-block">
+        <h2>Technologies used</h2>
+        <ul class="chips">
+          <li>Java</li><li>JavaFX</li><li>PostgreSQL</li><li>BCrypt</li><li>Maven</li><li>Git &amp; GitHub</li><li>VDM-SL</li>
+        </ul>
+      </section>
+
+      <!-- ============ WHAT I LEARNED ============ -->
+      <section class="detail-block">
+        <h2>What I learned</h2>
+        <ul class="feature-list">
+          <!-- EDIT: make these personal -->
+          <li>Password security is more than a login form: hashing with BCrypt is the baseline.</li>
+          <li>Transactions matter. A half-saved order is worse than a failed one.</li>
+          <li>Anything slow must leave the UI thread, or the app feels broken.</li>
+          <li>Writing a formal specification first exposes gaps in your thinking before they become bugs.</li>
+        </ul>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>© <span id="year">2026</span> Adeniji Adedola Oluwatamilore</p>
+      <p>CSC 419 · Pan-Atlantic University</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
