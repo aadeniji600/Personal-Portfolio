@@ -187,6 +187,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .shots figure { margin: 0; border: var(--border); background: var(--card); box-shadow: var(--shadow); }
 .shots img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; border-bottom: var(--border); }
 .shots figcaption { padding: 0.7rem 1rem; font-family: var(--font-mono); font-size: 0.82rem; color: var(--muted); }
+<<<<<<< HEAD
 .shots-head, .shot-wide { grid-column: 1 / -1; }
 .shots-head h2 { margin-bottom: 0.3em; }
 .shots-head .section-note { margin: 0; }
@@ -220,6 +221,8 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .lb-prev { left: 1rem; top: 50%; transform: translateY(-50%); }
 .lb-next { right: 1rem; top: 50%; transform: translateY(-50%); }
 body.no-scroll { overflow: hidden; }
+=======
+>>>>>>> 2768d1d3804baa014033665aba9805fb7a39b606
 
 /* ---------- Tablet ---------- */
 @media (max-width: 900px) {
@@ -242,7 +245,10 @@ body.no-scroll { overflow: hidden; }
 
   .timeline li { grid-template-columns: 1fr; gap: 0.2rem; }
   .shots { grid-template-columns: 1fr; }
+<<<<<<< HEAD
   .lb-prev, .lb-next { top: auto; bottom: 1rem; transform: none; }
+=======
+>>>>>>> 2768d1d3804baa014033665aba9805fb7a39b606
   .hero-actions .btn, .project-links .btn { flex: 1 1 auto; text-align: center; }
 }
 

@@ -21,6 +21,7 @@ if (menuToggle && mainNav) {
 
 const yearSpan = document.getElementById("year");
 if (yearSpan) yearSpan.textContent = new Date().getFullYear();
+<<<<<<< HEAD
 
 // 3) screenshot viewer: click a screenshot to open it big over a dark backdrop.
 //    Works on any page with a ".shots" section. Esc / click outside to close, arrow keys to move.
@@ -83,3 +84,5 @@ if (shots.length) {
     if (e.key === "ArrowRight") show(current + 1);
   });
 }
+=======
+>>>>>>> 2768d1d3804baa014033665aba9805fb7a39b606

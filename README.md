@@ -5,7 +5,7 @@
 **Course:** CSC 419: Advances in Web, Mobile and Blockchain Development
 **Department:** Computer Science, Pan-Atlantic University
 
-**Live site:** https://YOUR-SITE.vercel.app
+**Live site:** https://personal-portfolio-nine-rose-17.vercel.app/
 
 ## About
 A responsive personal portfolio built with plain HTML, CSS and a little JavaScript.
