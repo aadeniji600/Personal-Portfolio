@@ -14,6 +14,7 @@ No frameworks or build step.
 ## Pages
 - `index.html`: About, Skills, Projects, Achievements, Call to Action
 - `project-cafeteria.html`: dedicated project details page
+- `project-sante.html`: Santé Diagnostics (LIMS) project details page with screenshot gallery
 
 ## Folder structure
 ```
@@ -31,4 +32,3 @@ Search for `EDIT` in `index.html` and `project-cafeteria.html`. Every place you 
 
 ## Run locally
 Open `index.html` in a browser, or use the VS Code "Live Server" extension.
-"# Personal-Portfolio" 
