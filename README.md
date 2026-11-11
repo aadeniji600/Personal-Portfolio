@@ -5,7 +5,7 @@
 **Course:** CSC 419: Advances in Web, Mobile and Blockchain Development
 **Department:** Computer Science, Pan-Atlantic University
 
-**Live site:** https://personal-portfolio-nine-rose-17.vercel.app/
+**Live site:** https://YOUR-SITE.vercel.app
 
 ## About
 A responsive personal portfolio built with plain HTML, CSS and a little JavaScript.
@@ -14,7 +14,6 @@ No frameworks or build step.
 ## Pages
 - `index.html`: About, Skills, Projects, Achievements, Call to Action
 - `project-cafeteria.html`: dedicated project details page
-- `project-sante.html`: Santé Diagnostics (LIMS) project details page with screenshot gallery
 
 ## Folder structure
 ```
